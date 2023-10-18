@@ -21,17 +21,9 @@ const props = defineProps({
 
 <template>
   <div class="clients">
-    
     <div class="container">
-
       <div class="clients__inner">
         <h2 class="clients__title">Наши клиенты</h2>
-          <!-- <div class="clients__slider">
-            <div class="clients__item" v-for="client in clients" :key="client.id">
-              <img :src="client.image" :alt="client.alt" class="clients__item-logo">
-              <p class="clients__item-text">{{client.text}}</p>
-            </div>
-          </div> -->
           <Swiper
             :navigation= "true"
             :modules="modules" 
@@ -67,21 +59,11 @@ const props = defineProps({
                 }
               }
             }"
-            class="mySwiper"
-            >
-            <!-- :pagination="{clickable: true}" -->
-            <!-- class="clients__slider" -->
-            <!-- <div class="clients__slider"> -->
-
-              
+            class="mySwiper">
             <swiper-slide class="clients__item" v-for="client in clients" :key="client.id">
-              <!-- <div class="item-wrapper"> -->
                 <img :src="client.image" :alt="client.alt" class="clients__item-logo">
                 <p class="clients__item-text">{{client.text}}</p>
-              <!-- </div> -->
             </swiper-slide>
-              
-            <!-- </div> -->
           </swiper>
           <div class="clients__hint">
             <div class="clients__hint-left">
@@ -105,18 +87,12 @@ const props = defineProps({
 @import 'swiper/css/pagination';
 @import 'swiper/css/scrollbar';
 @import 'swiper/css/grid';
-// .swiper-slide {
-//   width: 200px !important;
-//   height: 100px !important;
-// }
 
 .swiper.prevEl {
   display: block;
-  color: red;
 }
 
   .swiper-button-next {
-    color: red;
     width: 92px !important;
     height: 92px !important;
     border-radius: 50% !important;
@@ -128,25 +104,17 @@ const props = defineProps({
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  // color: red;
 }
 
 .swiper-slide {
   text-align: center;
-    font-size: 18px;
-    /* height: calc((100% - 30px) / 2) !important; */
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    /* min-height: 126px; */
-    height: 94px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 94px;
 }
-// .item-wrapper {
-//   height: 50px;
-// }
-
-
 .clients {
   padding-top: 3.375rem;
   font-family: 'MabryPro', sans-serif;
@@ -172,7 +140,6 @@ const props = defineProps({
     grid-template-columns: repeat(3, 9.625rem);
     gap: 4.625rem 4.625rem;
     overflow-x: scroll;
-    // width: 330px;
     width: 100%;
     &::-webkit-scrollbar {
       display: none;
@@ -216,7 +183,6 @@ const props = defineProps({
   .bubble {
    position: relative;
    max-width: 250px;
-  //  height: 63px;
    padding: 16px 21px 15px 31px;
    background: $color-grey2;
    -webkit-border-radius: 10px;

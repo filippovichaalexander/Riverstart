@@ -17,9 +17,6 @@ const emit = defineEmits(['update:modelValue'])
 const handleInput = (event) => {
   emit('update:modelValue', event.target.files[0])
   const fsize = event.target.files[0].size;
-  // const file = Math.round((fsize / 1024));
-
-  // if(file <= 4096) {
     if(fsize <= 100000) {
     sizeAccepted = 'passed'
   } else sizeAccepted = 'notPassed'
@@ -60,7 +57,6 @@ const deleteFile = () => {
       </div>
     </div>
     <p class="response__info response--info-unvalid" v-else-if="sizeAccepted === 'notPassed'">Превышен максимальный размер файла</p>
-    <!-- <div class="finally" v-else-if="sizeAccepted === 'null' || props.modelValue == null"></div> -->
   </div>
 </template>
 

@@ -30,10 +30,6 @@ let actived = ref(false)
 const handleInput = (event) => {
   if(props.modelValue.value != '') {
     actived = true
-    // email mask
-//     let maskid = event.target.value.replace(/^(.)(.*)(.@.*)$/,
-//      (_, a, b, c) => a + b.replace(/./g, '*') + c
-// );
   if(props.type === 'email') {
       const regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
       let result = regex.test(event.target.value);
@@ -85,7 +81,6 @@ const handleInput = (event) => {
       @focus="handleFocus" 
       @blur="handleBlur"/>
       <p class="input__hint" v-if="valid == false">Вы ввели неверные данные</p>
-      <!-- <p class="hint" v-else-if="valid == true">ok</p>  -->
   </div>
 </template>
 

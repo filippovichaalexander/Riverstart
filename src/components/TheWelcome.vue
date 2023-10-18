@@ -108,40 +108,13 @@ import Footer from './Footer.vue'
 
 <template>
   <div class="main-wrapper">
-    <!-- <button class="btn btn--sm btn--bordered">Click2</button>
-    <button class="btn btn--lg btn--bordered">Click2</button>
-    
-    
-    <button class="btn btn--sm btn--disabled">Click</button> -->
-    <!-- <Input 
-      placeholder="Имя"
-      :type="typeText"
-      v-model="inputName"
-      v-model:active="activeName"
-    /> -->
-    <!-- <Input 
-      placeholder="Почта"
-      :type="typeEmail"
-      v-model="inputEmail"
-      v-model:active="activeEmail"
-    /> -->
-    <!-- <Input 
-      placeholder="Телефон"
-      :type="typeTel"
-      v-model="inputTel"
-      v-model:active="activeTel"
-    /> -->
-    <!-- <Upload v-model="uploadedFile"/> -->
     <Clients :clients="clients"/>
     <div class="main__middle-wrapper">
-      <!-- <div class="container--laptop"> -->
         <div class="laptop-wrapper">
-            <Projects class="main__middle-item main--left-item"/>
-            <Contacts class="laptop"/>
-
+          <Projects class="main__middle-item main--left-item"/>
+          <Contacts class="laptop"/>
         </div>
         <Form class="main__middle-item main--right-item" />
-      <!-- </div> -->
     </div>
     <Contacts class="mobile"/>
     <Footer />
