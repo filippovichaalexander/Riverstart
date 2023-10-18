@@ -128,6 +128,9 @@
 }
 
 @media (min-width: 1920px)  {
+  .container {
+    padding: 0 120px;
+  }
   .footer {
     padding-top: 120px;
     padding-bottom: 112px;

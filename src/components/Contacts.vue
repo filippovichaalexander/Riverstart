@@ -67,7 +67,9 @@
 <style lang="scss" scoped>
 @import '../assets/styles/base.scss';
 
-
+.mobile {
+  padding: 0 30px !important;
+}
 .color--white {
   color: $white;
 }
@@ -136,6 +138,9 @@
   }
 }
 @media (min-width: 768px)  {
+  .mobile {
+    padding: 48px 40px 0 40px !important;
+  }
   .contacts {
     padding-top: 48px;
     padding-bottom: 0;
@@ -148,12 +153,16 @@
     }
     &__middle {
       border-radius: 20px;
-      margin-right: 40px;
-      margin-left: 40px;
+      // margin-right: 40px;
+      // margin-left: 40px;
+      padding: 40px;
     }
   }
 }
 @media (min-width: 1280px)  {
+  .laptop {
+    padding-left: 80px;
+  }
   .container {
     &--middle {
       padding: 22px 22px 23px 26px;
@@ -171,12 +180,15 @@
     }
     &__middle {
       margin-right: 80px;
-      margin-left: 80px;
+      margin-left: 0;
     }
   }
 }
 
 @media (min-width: 1920px)  {
+  .laptop {
+    padding-left: 0;
+  }
   .contacts {
     font-size: 18px;
     &__top {

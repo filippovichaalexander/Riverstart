@@ -34,6 +34,9 @@
 <style lang="scss" scoped>
 @import '../assets/styles/base.scss';
 .projects {
+  &__container {
+    padding: 0 30px;
+  }
   margin-top: 87px;
   font-family: 'MabryPro', sans-serif;
   background-color: $color-background2;
@@ -92,8 +95,11 @@
 }
 @media (min-width: 768px)  {
   .projects {
+    &__container {
+      padding: 0 40px;
+    }
     &__info-wrapper {
-      flex-direction: row;
+      flex-direction: row !important;
       justify-content: flex-start;
     }
     &__email-icon-wrapper {
@@ -115,6 +121,12 @@
 
 @media (min-width: 1280px)  {
   .projects {
+    &__container {
+      padding: 0 80px;
+    }
+    &__info-wrapper {
+      flex-direction: column !important;
+    }
     &__title {
       padding-bottom: 36px;
       font-size: 3.5rem;
@@ -138,6 +150,9 @@
 
 @media (min-width: 1920px)  {
   .projects {
+    &__container {
+      padding: 0;
+  }
     &__title {
       font-size: 85px;
       white-space: nowrap;

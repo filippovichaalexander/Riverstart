@@ -356,6 +356,11 @@ import Modal from './Modal.vue'
       padding: 0 40px;
       margin: 0 auto;
     }
+    &__btns-interest {
+      max-width: 510px;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
   }
   .inputs {
     &__row {
@@ -368,19 +373,6 @@ import Modal from './Modal.vue'
     }
     &--row-item1 {
       margin-right: 36px;
-    }
-  }
-}
-@media (min-width: 768px)  {
-  .form {
-    &__container {
-      padding: 0 63px;
-      margin: 0 auto;
-    }
-    &__btns-interest {
-      max-width: 510px;
-      flex-wrap: wrap;
-      gap: 13px;
     }
   }
 }

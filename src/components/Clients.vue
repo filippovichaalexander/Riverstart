@@ -223,6 +223,9 @@ const props = defineProps({
     &__item-logo {
         width: 12.625rem;
       }
+      &__title {
+        font-size: 85px;
+      } 
   }
 
 }

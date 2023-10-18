@@ -165,7 +165,7 @@ import Footer from './Footer.vue'
   @media (min-width: 1280px)  {
     .main__middle-wrapper {
       padding-right: 0;
-      padding-left: 40px;
+      padding-left: 0;
     }
     .main--right-item {
         width: 55%;
@@ -179,7 +179,7 @@ import Footer from './Footer.vue'
   @media (min-width: 1920px)  {
     .main__middle-wrapper {
       padding-right: 0;
-      padding-left: 80px;
+      padding-left: 120px;
     }
     .laptop-wrapper {
         width: 611px;
