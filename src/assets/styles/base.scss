@@ -1,0 +1,162 @@
+// :root{
+  // --primary: #58243C;
+  // --primary-hover: #642b43;
+  // --second: #222;
+  // --second-hover: #222;
+  // --success: #2DD748;
+  // --success-hover: #222;
+  // --info: #222;
+  // --info-hover: #222;
+  // --warning: #222;
+  // --warning-hover: #222;
+  // --danger: #FF3030;
+  // --danger-hover: #222;
+
+  // --black: #2d2d2d;
+  // --gray: #A0A0A0;
+  // --light-gray: #D1D1D1;
+  // --light-gray-second: #EFEFEF;
+  // --dark-brown: #464646;
+  // --deep-blue: #0E284F;
+  // --main-blue: #3051FF;
+  // --red: #FF3030;
+  // --redOpacity: #FF9B9B;
+  // --green: #14D149;
+  // --scroller: #E3E7FF;
+
+  // --width-menu: 22.8rem;
+
+  // --white: #ffffff;
+  // --z-index: 998;
+  // --z-index-modals: 999;
+
+  // @use './responsive.scss';
+
+  // mine
+  $primary: #312DFF;
+  $primary-hover: #2926D8;
+  $primary-pressed: #090FAE;
+  $primary-disabled: rgba(9, 15, 174, 0.2);
+  $white: #fff;
+  
+  $color-grey1: #9A9AAD;
+  $color-grey2: #F7F7FA;
+  $color-grey3: #E0E0E4;
+  $color-black1: #1F2032;
+  $color-black2: #15141A;
+
+  $color-blue1: #DEDEF8;
+  $color-background1: #EEEFF4;
+  $color-background2: #121523;
+
+
+  $color-green: #71B51C;
+  $color-red: #E8412A;
+  $color-red1: rgba(232, 65, 42, 0.05);
+
+
+
+// }
+
+@font-face {
+  font-family: 'MabryPro';
+  src: local('MabryPro'), local('MabryPro'),
+  url('@/assets/fonts/MabryPro-Regular.woff') format('woff'),
+  url('@/assets/fonts/MabryPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MabryPro';
+  src: local('MabryPro'), local('MabryPro'),
+  url('@/assets/fonts/MabryPro-Medium.woff') format('woff'),
+  url('@/assets/fonts/MabryPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+  margin: 0;
+  line-height: 1;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'MabryPro', sans-serif;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+input {
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: transparent;
+  color: inherit;
+}
+.container {
+  // width: 420px;
+  padding: 0 30px;
+  margin: 0 auto;
+  // width: calc(100vw - 60px);
+}
+// Media
+@media (min-width: 768px)  {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1280px)  {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1920px)  {
+  .container {
+    padding: 0 120px;
+  }
+}

@@ -1,0 +1,114 @@
+@use './base.scss';
+
+.btn {
+  font-family: 'MabryPro', sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  &--sm {
+    padding: 1rem 1.5rem;
+  
+    font-size: 1.188rem;
+    line-height: 1.188rem;
+    
+    border-radius: 0.75rem;
+  }
+  &--brief-sm {
+    padding: 1rem 1.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  
+    font-size: 1.188rem;
+    line-height: 1.188rem;
+  }
+  &--lg {
+    padding: 1.938rem 6.813rem;
+  
+    font-family: 'MabryPro', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    
+    border-radius: 1.375rem;
+  }
+  &--default {
+    color: $white;
+    background-color: $primary;
+  }
+  &--bordered {
+    color: $color-black1;
+    outline: 2px solid $color-grey3;
+    outline-offset: -2px;
+    background-color: $white;
+  
+    transition: all .5s ease;
+    &:hover {
+      color: $white;
+      background-color: $primary-hover;
+      outline: none;
+      
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $primary-pressed;
+    }
+  }
+  &--disabled {
+    color: $color-grey2;
+    background-color: $primary-disabled;
+  }
+  &--mb-lg {
+    width: 100%;
+    padding: 1.438rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1%;
+    margin: 2.188rem 0 1.938rem 0;
+  }
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &--left-item {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+    flex: 0 0 1;
+  }
+  &--center-item {
+    border-radius: 0;
+    flex: 0 0 1; 
+  }
+  &--right-item {
+    flex: 0 0 1;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+
+@media (min-width: 1280px)  {
+  .btn {
+    &--mb-lg {
+      width: 288px;
+      padding: 1.438rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1920px)  {
+  .btn {
+    &--mb-lg {
+      width: 374px;
+      padding: 1.438rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+      margin-top: 67px;
+    }
+  }
+}
